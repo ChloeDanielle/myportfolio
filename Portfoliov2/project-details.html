@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Chloe Gutierrez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html#projects" class="logo">Chloe Danielle Gutierrez</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#projects" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="projects-page container">
+    <section class="projects section is-visible">
+      <div class="projects-page-head">
+        <h1 class="projects-page-title" id="projectsPageTitle">Projects</h1>
+        <a href="index.html#projects" class="btn btn-secondary">Back</a>
+      </div>
+      <div class="projects-list-wrap" id="projectsList"></div>
+    </section>
+  </main>
+
+  <script>
+    const data = {
+      "python-system-projects": {
+        title: "Python System Projects",
+        projects: [
+          {
+            title: "ml-dashboard",
+            description: "Machine learning monitoring dashboard for training metrics, model comparisons, and experiment tracking.",
+            tech: "Python, Flask, Pandas, Plotly",
+            link: "#"
+          },
+          {
+            title: "attendance-automation",
+            description: "Automated attendance logging and report generation with date filters and CSV export.",
+            tech: "Python, SQLite, Tkinter",
+            link: "#"
+          },
+          {
+            title: "inventory-guardian",
+            description: "Stock management system with low-inventory alerts, supplier records, and monthly summaries.",
+            tech: "Python, FastAPI, PostgreSQL",
+            link: "#"
+          },
+          {
+            title: "data-clean-pipeline",
+            description: "ETL flow for importing, validating, cleaning, and transforming business datasets.",
+            tech: "Python, NumPy, Pandas",
+            link: "#"
+          },
+          {
+            title: "ticket-flow-system",
+            description: "Internal issue ticketing system with status tracking, role-based views, and analytics.",
+            tech: "Python, Django, Bootstrap",
+            link: "#"
+          }
+        ]
+      },
+      "web-development": {
+        title: "Web Development",
+        projects: [
+          {
+            title: "portfolio-v2",
+            description: "Personal portfolio website with animated sections and optimized project showcase.",
+            tech: "HTML, CSS, JavaScript",
+            link: "#"
+          },
+          {
+            title: "ecommerce-landing",
+            description: "Responsive product landing page focused on conversion and accessibility.",
+            tech: "HTML, CSS, JavaScript",
+            link: "#"
+          },
+          {
+            title: "team-dashboard",
+            description: "Dashboard UI for tracking tasks, status, and productivity insights.",
+            tech: "React, CSS, Firebase",
+            link: "#"
+          }
+        ]
+      },
+      "figma": {
+        title: "Figma",
+        projects: [
+          {
+            title: "finance-mobile-ui",
+            description: "Mobile finance app wireframes and high-fidelity interactive prototype.",
+            tech: "Figma",
+            link: "#"
+          },
+          {
+            title: "design-system-kit",
+            description: "Reusable component system with typography scales, spacing rules, and variants.",
+            tech: "Figma",
+            link: "#"
+          },
+          {
+            title: "onboarding-flow",
+            description: "User onboarding journey prototype focused on clarity and reduced drop-off.",
+            tech: "Figma",
+            link: "#"
+          }
+        ]
+      },
+      "other-systems": {
+        title: "Other Systems",
+        projects: [
+          {
+            title: "records-tracker",
+            description: "Desktop tool for storing and searching institutional records.",
+            tech: "C#, .NET, SQL Server",
+            link: "#"
+          },
+          {
+            title: "support-request-hub",
+            description: "Request intake and routing system for operational support teams.",
+            tech: "Java, Spring Boot, MySQL",
+            link: "#"
+          },
+          {
+            title: "asset-monitor",
+            description: "Internal tracking system for company equipment lifecycle and maintenance.",
+            tech: "C#, WPF, SQLite",
+            link: "#"
+          }
+        ]
+      },
+      "graphic-designs": {
+        title: "Graphic Designs",
+        projects: [
+          {
+            title: "brand-identity-pack",
+            description: "Complete branding package including logo variants and usage rules.",
+            tech: "Figma, Illustrator",
+            link: "#"
+          },
+          {
+            title: "social-campaign-set",
+            description: "Marketing graphics and visual templates for social channels.",
+            tech: "Figma, Photoshop",
+            link: "#"
+          },
+          {
+            title: "event-poster-series",
+            description: "Poster collection with unified visual language for promotional events.",
+            tech: "Figma, Photoshop",
+            link: "#"
+          }
+        ]
+      },
+      "game-development-projects": {
+        title: "Game Development Projects",
+        projects: [
+          {
+            title: "2d-platformer-prototype",
+            description: "Side-scrolling platformer prototype with jump physics, enemy AI, and collectible systems.",
+            tech: "Unity, C#",
+            link: "#"
+          },
+          {
+            title: "puzzle-room-escape",
+            description: "Puzzle-based escape game featuring interaction mechanics, clues, and progression gating.",
+            tech: "Unity, C#",
+            link: "#"
+          },
+          {
+            title: "topdown-coop-arena",
+            description: "Local co-op top-down arena game with wave spawning, score tracking, and power-ups.",
+            tech: "Unity, C#, Blender",
+            link: "#"
+          }
+        ]
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category") || "python-system-projects";
+    const selected = data[category] || data["python-system-projects"];
+
+    const titleEl = document.getElementById("projectsPageTitle");
+    const listEl = document.getElementById("projectsList");
+    titleEl.textContent = selected.title;
+
+    listEl.innerHTML = selected.projects
+      .map((project, index) => `
+        <article class="project-item">
+          <h3>${index + 1}. ${project.title}</h3>
+          <p>${project.description}</p>
+          <p class="tech">Language/Tech: ${project.tech}</p>
+          <a class="btn btn-primary" href="${project.link}" target="_blank" rel="noopener noreferrer">View Live Project</a>
+        </article>
+      `)
+      .join("");
+  </script>
+</body>
+</html>

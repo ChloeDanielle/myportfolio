@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Your Name - projects, skills, and contact." />
+  <title>Gutierrez Chloe | Portfolio</title>
+  <link rel="preload" as="image" href="ME.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body class="is-loading">
+  <div class="site-loader" id="siteLoader" role="status" aria-live="polite" aria-label="Loading website">
+    <div class="loader-mark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p>Loading Portfolio</p>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">CDG.DEV</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">TechStack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Web Developer / Designer / Creator</p>
+        <h1>Hi, I'm Chloe Danielle Gutierrez</h1>
+        <p class="hero-text">
+          I build clean, user-focused digital experiences and turn ideas into fast, responsive websites.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <span class="id-lace" aria-hidden="true"></span>
+        <span class="id-clip" aria-hidden="true"></span>
+        <span class="id-ring" aria-hidden="true"></span>
+        <div class="hero-media-frame">
+          <img src="ME.png" alt="Portrait of Your Name" width="460" height="520" fetchpriority="high" decoding="async" draggable="false" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container section">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer who enjoys building modern websites and web apps. I focus on performance,
+        accessibility, and clear user experiences.
+      </p>
+    </section>
+
+    <section id="skills" class="skills section">
+      <h2>TECHSTACK</h2>
+      <div class="tech-marquee">
+        <ul class="skill-list tech-track">
+          <li><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML</span></li>
+          <li><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS</span></li>
+          <li><i class="devicon-java-plain colored" aria-hidden="true"></i><span>JAVA</span></li>
+          <li><i class="devicon-figma-plain colored" aria-hidden="true"></i><span>FIGMA</span></li>
+          <li><i class="devicon-unity-original" aria-hidden="true"></i><span>Unity</span></li>
+          <li><i class="devicon-csharp-plain colored" aria-hidden="true"></i><span>C#</span></li>
+          <li><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></li>
+          <li><i class="devicon-flutter-plain colored" aria-hidden="true"></i><span>Flutter</span></li>
+          <li><i class="devicon-supabase-plain colored" aria-hidden="true"></i><span>Supabase</span></li>
+          <li><i class="devicon-mongodb-plain colored" aria-hidden="true"></i><span>Mongo DB</span></li>
+        </ul>
+        <ul class="skill-list tech-track" aria-hidden="true">
+          <li><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML</span></li>
+          <li><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS</span></li>
+          <li><i class="devicon-java-plain colored" aria-hidden="true"></i><span>JAVA</span></li>
+          <li><i class="devicon-figma-plain colored" aria-hidden="true"></i><span>FIGMA</span></li>
+          <li><i class="devicon-unity-original" aria-hidden="true"></i><span>Unity</span></li>
+          <li><i class="devicon-csharp-plain colored" aria-hidden="true"></i><span>C#</span></li>
+          <li><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></li>
+          <li><i class="devicon-flutter-plain colored" aria-hidden="true"></i><span>Flutter</span></li>
+          <li><i class="devicon-supabase-plain colored" aria-hidden="true"></i><span>Supabase</span></li>
+          <li><i class="devicon-mongodb-plain colored" aria-hidden="true"></i><span>Mongo DB</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container section">
+      <div class="section-head">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-slider" id="projectSlider">
+        <div class="project-deck" id="projectDeck">
+          <article class="stack-card" data-key="python-system-projects">
+            <div class="card-media">
+              <img src="Project1card.png" alt="Python System Projects card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 1</p>
+              <h3>Python System Projects</h3>
+              <p class="card-desc">System-focused Python builds for automation, tracking, and data processing workflows.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQL</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=python-system-projects">Open Projects</a>
+            </div>
+          </article>
+
+          <article class="stack-card" data-key="web-development">
+            <div class="card-media">
+              <img src="Project2card.png" alt="Web Development card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 2</p>
+              <h3>Web Development</h3>
+              <p class="card-desc">Modern websites and dashboard interfaces focused on speed and user experience.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=web-development">Open Projects</a>
+            </div>
+          </article>
+
+          <article class="stack-card" data-key="figma">
+            <div class="card-media">
+              <img src="Project3card.png" alt="Figma card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 3</p>
+              <h3>Figma</h3>
+              <p class="card-desc">UI/UX prototypes with strong visual systems, components, and product flows.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>Figma</li>
+                <li>Prototyping</li>
+                <li>Design System</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=figma">Open Projects</a>
+            </div>
+          </article>
+
+          <article class="stack-card" data-key="other-systems">
+            <div class="card-media">
+              <img src="Project4card.png" alt="Other Systems card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 4</p>
+              <h3>Other Systems</h3>
+              <p class="card-desc">Cross-platform system projects for records, support, and internal tools.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>C#</li>
+                <li>Java</li>
+                <li>MySQL</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=other-systems">Open Projects</a>
+            </div>
+          </article>
+
+          <article class="stack-card" data-key="graphic-designs">
+            <div class="card-media">
+              <img src="Project5card.png" alt="Graphic Designs card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 5</p>
+              <h3>Graphic Designs</h3>
+              <p class="card-desc">Brand and campaign visuals crafted for clarity, consistency, and impact.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=graphic-designs">Open Projects</a>
+            </div>
+          </article>
+
+          <article class="stack-card" data-key="game-development-projects">
+            <div class="card-media">
+              <img src="Project1card.png" alt="Game Development Projects card image" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-body">
+              <p class="card-kicker">Project 6</p>
+              <h3>Game Development Projects</h3>
+              <p class="card-desc">Interactive game prototypes with mechanics, UI, and polished gameplay loops.</p>
+              <ul class="card-tags" aria-label="Tech stack">
+                <li>Unity</li>
+                <li>C#</li>
+                <li>Blender</li>
+              </ul>
+              <a class="btn btn-primary open-projects" href="project-details.html?category=game-development-projects">Open Projects</a>
+            </div>
+          </article>
+        </div>
+        <div class="projects-controls" aria-label="Project slider controls">
+          <button type="button" class="arrow-btn" id="projectPrev" aria-label="Show previous project category">&#8592;</button>
+          <div class="project-dots" id="projectDots" aria-label="Project pagination"></div>
+          <button type="button" class="arrow-btn" id="projectNext" aria-label="Show next project category">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education container section">
+      <h2>Education</h2>
+      <div class="education-list">
+        <article class="education-item">
+          <p class="education-year">2022 - Present</p>
+          <h3>De La Salle Lipa University</h3>
+          <p>Bachelor of Science in Entertainment and Multimedia Computing</p>
+          <p>Major in Game Development</p>
+        </article>
+
+        <article class="education-item">
+          <p class="education-year">2020 - 2022</p>
+          <h3>Cuenca Institute Senior High School</h3>
+          <p>ABM Track</p>
+        </article>
+
+        <article class="education-item">
+          <p class="education-year">2016 - 2020</p>
+          <h3>Cuenca Institute Junior High School</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2>Contact</h2>
+      <p>Want to work together? Reach out anytime.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-icon" aria-hidden="true">&#9993;</span>
+          <span class="contact-label">Email:</span>
+          <a href="mailto:gutierrezchloe1212@gmail.com">gutierrezchloe1212@gmail.com</a>
+        </li>
+        <li>
+          <i class="devicon-github-original contact-icon" aria-hidden="true"></i>
+          <span class="contact-label">GitHub:</span>
+          <a href="https://github.com/ChloeDanielle" target="_blank" rel="noopener noreferrer">https://github.com/ChloeDanielle</a>
+        </li>
+        <li>
+          <i class="devicon-linkedin-plain contact-icon" aria-hidden="true"></i>
+          <span class="contact-label">LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/chloe-danielle-gutierrez/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/chloe-danielle-gutierrez/</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Chloe Danielle Gutierrez. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
